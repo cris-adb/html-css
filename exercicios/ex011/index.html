@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho da guia do seu navegador</p>
+<picture>
+    <source media="(max-width: 700px)" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="Imagem flexível">
+</picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+
+<!--<audio src="media/toma-jack.mp3" autoplay></audio>
+ O atributo autoplay faz com que o áudio comece a tocar automaticamente quando a página é carregada. Porém não é compatível com todos os navegadores, por isso vamos aprender a colocar audio de outra forma -->
+
+<audio preload="auto" controls loop>
+    <source src="media/toma-jack.mp3" type="audio/mpeg">
+    <source src="media/toma-jack.ogg" type="audio/ogg">
+    <p>Infelizmente seu navegador não consegue reproduzir áudio.<a href="media/toma-jack.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+</audio>
+</body>
+</html>

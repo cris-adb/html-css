@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        /* Medidas absoultas: cm, mm, in (polegadas), px, pt, pc
+        são medidas absolutas mas não deve serem usadas como referência principal  pois telas tem tamanhos diferentes, e um pixel pode não ser necessariamente so um pixel em determinadas construções de telas.
+        Medidas relativas: 
+        em: relativo ao tamanho do M maíusculo;
+        ex: relativo ao tamanho do corpo de uma letra, que é usado o x como base na criação de novas fontes;
+        rem: segue o padrao da em, porém relativa a fonte que está configurada no body;
+        vw: (view-port width) referente a largura da tela;
+        vh: (view-port heigh) referente a altura da tela;
+        %: clara e direta, referente a porcentagem;
+        Em fonte size, e recomendado pela w3c o uso de px e em.
+        Geralmente o tamanho padrão é 16px que é relativamente equivalente a 1em, sempre relativo ao tamanho natural da coisa, sendo assim, 0.5em equivale a 8px, e 2em 32px. Dessa forma é recomendado o uso em em, já que algumas telas tem construção que nao segue o padrão de 1 pixel ser necessariamente 1 pixel.
+        */
+        body {
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        /* shorthand font, nada mais é que um facilitador na hora de escolher familia tamanho peso estilo e etc, porém ele segue uma ordem correta que é:
+        font-style, font-weight, font-size, font-family
+        ex: font: normal 400 1em Arial, Helvetica< sans-serif;
+        */
+
+        h1{
+            font: italic 900 2em 'Work Sans', Arial, Helvetica, sans-serif;
+        }
+
+        h2{
+            font: normal bold 1em 'Work Sans';
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, modi quasi optio temporibus quos ut vero nisi dolore qui amet sapiente animi iste exercitationem placeat quae deleniti pariatur, quaerat praesentium.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia odit modi optio consectetur perferendis sequi laborum dolore, et corporis id quaerat nostrum aspernatur non quae facilis magnam ullam hic accusamus!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id nobis voluptas quo aspernatur repudiandae error nostrum? Ad rerum delectus asperiores sapiente voluptatibus? Provident nihil a dolore repudiandae ipsum adipisci quibusdam?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor nemo, veniam aspernatur ea ducimus beatae exercitationem, eius iste officiis consequatur similique quo quisquam corrupti voluptatem eum in libero at voluptatibus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea repudiandae totam reprehenderit molestiae et esse amet necessitatibus error possimus quidem cum sit optio aliquam iste, perferendis maxime, saepe architecto beatae?
+    </p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est veritatis quos nemo, animi quasi hic aliquam soluta debitis inventore nobis omnis sint tenetur, fugiat obcaecati? Molestiae nam est inventore reiciendis?</p>
+</body>
+</html>
