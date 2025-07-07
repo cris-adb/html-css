@@ -6,12 +6,24 @@
     <title>Fundo fixo de tela</title>
     <style>
         body {
-            height: 100vh;
-            background-color: black;
+           /* muito importante o uso da height com o valor de vh (viewport) pois só dessa forma fica responsivo e garantido a imagem em qualquer tamanho de tela */ height: 100vh; 
+            /* background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
+            background-repeat: no-repeat;
             background-size: cover;
-            background-attachment: fixed;
+            background-attachment: fixed; */
+        
+
+        /* Shorthand para background 
+        color > image > position > repeat > [size] > attachment 
+        */
+
+             background: black url(imagens/wallpaper002.jpg) center center no-repeat  fixed;
+             background-size: cover;
+
+             /* Apesar de ser uma shorthand válida, a maioria dos navegadores não aceitam/conhecem a inserção de size ( nesse caso é o cover) na shorthand. Desse modo a forma atual (07/07/2025) de usar a shorthand é não incluíndo o valor de size nela, e  à inserir completa abaixo como foi feito. */ 
+
         }
 
         main {
