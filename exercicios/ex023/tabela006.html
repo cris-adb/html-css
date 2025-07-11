@@ -13,7 +13,7 @@
         article {
             background-color: grey;
             margin: auto;
-            max-width: 600px;
+            max-width: 1000px;
         }
 
         h1 {
@@ -27,13 +27,17 @@
         table {
             margin: auto;
             border-collapse: collapse;
-            width: 300px;
+            width: 400px;
         }
-        td {
+        td, th {
             border: 3px solid black;
             font-weight: bolder;
             padding: 10px;
             text-align: center;
+        }
+
+        .d2 {
+
         }
     </style>
 </head>
@@ -95,7 +99,31 @@
                 <td colspan="4">N</td>
             </tr>
         </table>
-        <h1>Desafio das Tabelas</h1>
+        <h1>Desafio das Tabelas completas</h1>
+        <table class="d2">
+            <caption>Filmes favoritos da galera</caption>
+            <thead>
+                <tr>
+                    <td>Grupo</td>
+                    <td>Nomes</td>
+                    <td colspan="3">Filmes</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="3">Mulheres</th>
+                    <td>Ana Maria Santos</td>
+                    <td>Alien</td>
+                    <td>Rambo</td>
+                    <td>Vingadores</td>
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+            </tbody>
+        </table>
     </article>
 </body>
 </html>
