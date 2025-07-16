@@ -11,22 +11,12 @@
         
     </style>
 </head>
-<!-- a etiqueta label é importante em formualários, sempre use ela para criar um vínculo entre os valores. Na tag input submit nao é necessário pois ela funciona como um botão. !--> 
+<!-- a etiqueta label é importante em formualários, sempre use ela para criar um vínculo entre os parâmetros. Na tag input submit nao é necessário pois ela funciona como um botão. !--> 
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php">
-        <p>
-            <label for="inome">Nome:
-            </label> 
-            <input type="text" name="nome" id="inome">
-        </p>
-        <p>
-            <label for="isobrenome">Sobrenome:
-            </label> 
-            <input type="text" name="sobrenome" id="isobrenome">
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-        </p>
+    <form action="cadastro.php" method="">
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label><input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
 </body>
 </html>
