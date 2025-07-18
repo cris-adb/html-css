@@ -1,0 +1,9 @@
+# cadastro.python
+
+# Exemplo simples de início de um programa Python
+
+def main():
+    print("Olá, bem-vindo ao sistema de cadastro!")
+
+if __name__ == "__main__":
+    main()
