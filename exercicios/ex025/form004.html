@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: auto;
+            text-align: center;
+        }
+        h1 {
+            background-color: black;
+            color: white;
+            font-variant: small-caps;
+            margin: 0px;
+
+        }
+        fieldset {
+            margin-top: 1px;
+            background-color: lightcoral;
+            border: 2px solid red;
+        }
+        legend {
+            background-color: red;
+            color: white;
+        }
+        input {
+            margin: 0px;
+            border: 0px;
+            padding: 0px;
+        }
+       input::placeholder {
+            padding: 5px;
+            background-color: black;
+            color: red;
+        }
+        #botoes > input {
+            font-family: 'Times New Roman', Times, serif;
+            font-variant: small-caps;
+            font-size: 2em;
+            margin: 2px;
+            border: 2px;
+            padding: 1px 2px;
+            background-color: black;
+            color: white;
+        }
+        #botoes > input:hover {
+            background-color: red;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required minlength="5" maxlength="20" placeholder="Insira seu nome">
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" required placeholder="Insira seu email" autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" required placeholder="(xx)xxxxx-xxxx" autocomplete="tel" pattern="^\(\d{2}\)\d{5}-\d{4}$">
+            </p>
+        </fieldset>
+        <p id="botoes">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
