@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 { 
+            background-color: black;
+            color: white;
+            font-variant: small-caps;
+            text-align: center;
+            margin-top: -8px;
+            margin-right:-8px;
+            margin-left: -8px;
+            padding: 20px;
+        }
+
+        form {
+            border: 2px solid black;
+            padding-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="icor">Cor: </label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+
+        <p>
+            <label for="inivel">Nível de Satisfação</label>
+            <input type="range" name="viel" id="inivel" min="0" max="5"  value="0" required>
+        </p>
+
+        <p>
+            <label for="ifoto">Foto do perfil:</label>
+            <input type="file" name="Foto" id="ifoto" required>
+        </p>
+        <!-- Atenção, usar o input file somente se o method ser post, pois só assim ele será enviado para o servidor a menos que o arquivo seja menor que 3 mil bytes, pois esse é o limite do method get-->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
