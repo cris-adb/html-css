@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body {
+            background-image: url(../ex023/imagens/bandeiragrande.jpg);
+            background-position: 50%, 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        
+        h1 {
+            text-align: center;
+            background-color: black;
+            color: white;
+            font-variant: small-caps;
+            margin-top: 0px;
+        }
+
+        form {
+            background-color: rgba(0, 0, 0, 0.473);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário dos Brasileiros</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imasc" value="M">
+            <label for="imasc">Masculino</label>
+
+            <input type="radio" name="sexo" id="ifemi" value="F">
+            <label for="ifemi">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <p>Escolha com sabedoria</p>
+            <input type="checkbox" name="esfut" id="iesfut" checked>
+            <label for="iesfut">Futebol (brasileiro é obrigado a gostar)</label><br>
+
+            <input type="checkbox" name="esvol" id="iesvol">
+            <label for="iesvol">Vôlei</label><br>
+
+            <input type="checkbox" name="esbas" id="iesbas">
+            <label for="iesbas">Basquete</label><br>
+
+            <input type="checkbox" name="esten" id="iesten">
+            <label for="iesten">Tênis</label><br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
