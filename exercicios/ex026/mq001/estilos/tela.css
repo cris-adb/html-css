@@ -42,6 +42,7 @@ article {
 
 article p {
     text-align: justify;
+    text-indent: 30px;
 }
 
 article h2 {
