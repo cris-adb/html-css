@@ -8,12 +8,13 @@
 }
 
 body {
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
 }
 
 header {
-    background-color: rgba(158, 158, 158);
+    background-color: #33D67E;
 }
 
 header > h1 {
@@ -23,17 +24,18 @@ header > h1 {
 
 menu ul {
     list-style-type: none;
-    background-color: gray;
+    background-color: #33D646;
 }
 
 menu li {
-    background-color: rgba(75, 75, 75);
+    background-color: #A4D633;
     color: white;
     display: inline-block;
     padding: 10px;
 }
 
 article {
+    background-color: #33D6B5;
     max-width: 800px;
     display: block;
     margin: auto;
