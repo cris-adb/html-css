@@ -13,7 +13,7 @@
 
 
 /* PC */
-@media screen and (min-width: 1025px) and {
+@media screen and (min-width: 1025px) {
     #burguer {
         display: none;
     }
